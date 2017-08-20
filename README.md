@@ -23,6 +23,10 @@ const config = flavors('my-config', {
 });
 ```
 
+### Configuration definition
+
+Configuration definition is the same as when using [JSON loader](https://github.com/flavors-js/flavors#json-loader).
+
 ## Maintainers
 
 - [@mxl](https://github.com/mxl)
