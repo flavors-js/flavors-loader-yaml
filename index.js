@@ -16,10 +16,10 @@ module.exports = {
       merge = c.merge;
     }
     if (typeof c.load === 'object') {
-      load = _ => c.load;
+      load = () => c.load;
     }
     if (_extends === undefined && load === undefined && merge === undefined) {
-      load = _ => c;
+      load = () => c;
     }
     return {
       extends: _extends,

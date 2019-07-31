@@ -4,8 +4,8 @@
   "description": "Flavors YAML configuration loader.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/*/index.js",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "lint": "eslint *.js test/*.js test/**/*.js",
+    "test": "mocha test/*/index.js"
   },
   "repository": "flavors-js/flavors-loader-yaml",
   "keywords": [
@@ -17,7 +17,7 @@
   ],
   "author": {
     "name": "Michael Ledin",
-    "email": "michael@ledin.me",
+    "email": "mledin89@gmail.com",
     "url": "https://github.com/mxl"
   },
   "engines": {
@@ -32,10 +32,12 @@
   },
   "homepage": "https://github.com/flavors-js/flavors-loader-yaml#readme",
   "devDependencies": {
-    "flavors": "^1.1.2",
-    "mocha": "^3.3.0",
-    "semantic-release": "^7.0.2",
-    "semantic-release-cli": "^3.0.3"
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0",
+    "flavors": "^4.5.3",
+    "mocha": "^6.2.0",
+    "semantic-release": "^15.13.19",
+    "semantic-release-cli": "^5.1.1"
   },
   "dependencies": {
     "js-yaml": "^3.9.1"
